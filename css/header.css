@@ -1,0 +1,284 @@
+
+.topheader{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:99;
+    background-color:rgba(0,0,0,0.2);
+    
+}
+
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 980px;
+    margin: 0 auto;
+
+
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+
+    font-size: 18px;
+    font-weight: 600;
+    color:black;
+    
+
+}
+.logo img{
+    border-radius:50%;
+    margin-right:5px;
+
+}
+.logo .ley{
+    font-family: var(--letrita);
+    font-size:25px ;
+    text-decoration: none;
+    
+    
+
+}
+.menu{
+    list-style: none;
+    display: flex;
+    margin:0;
+    padding:0;
+
+}
+.menu li{
+    padding: 0 15px;
+
+}
+.menu li a{
+    font-weight: 600;
+    color:black;
+    font-size: 18px;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-decoration:none;
+    position: relative;
+    
+
+}
+.menu li a::after{
+    content:"";
+    background-color:bisque;
+    position:absolute;
+    left:0;
+    top:100%;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    transition: opacity 0.2s ;
+    
+}
+.menu li a.selected:after,
+.menu li a:hover::after{
+    opacity: 1;
+    
+}
+.menu li a:hover{
+    color:black;
+}
+
+.open-menu,
+.close-menu{
+    display: none;
+}
+
+
+#inicio{  
+    position: relative; 
+    height: 100vh;
+    background:linear-gradient(#00545d,#000729);
+    overflow: hidden; 
+       
+}
+.contenido{
+    max-width: 1500px;
+    margin:0 auto; 
+    height: 100%;
+    
+    
+}
+.contenido .info{
+    position:relative;
+    top:50%;
+    left:50%;
+    width: 50%;
+    text-align:center;
+    transform: translateY(-50%);
+    animation: aparecer 2s forwards; 
+    
+}
+
+@keyframes aparecer{
+    0%{
+        margin-left:30px;
+        opacity: 0;
+        transform:translateY(0%)
+
+    }
+    100%{
+        margin-left:0;
+        opacity: 1;
+    }
+}
+.yo{
+    font-size: 40px;
+    color:#fff;
+    -webkit-text-stroke: 2px #000;
+    padding-left: 2px;
+    text-shadow: 3px 3px #000;
+    letter-spacing: 5px;
+}
+.carrera{
+    display: inline-block;
+    font-size: 25px;
+    color:#4c4c4c;
+    margin-bottom: 15px;
+}
+.redes a{  
+    color:#4c4c4c;
+    font-size: 20px;
+    margin-right: 15px;
+
+}
+/*base-burbujas*/
+.burbujas  img{ 
+    width: 50px;
+    animation: bubble 7s linear infinite; 
+}
+.burbujas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom:-70px; 
+    
+}
+@keyframes bubble{
+    0%{
+        transform:translateY(0);
+        opacity:0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+        
+}
+.burbujas img:nth-child(1){
+    animation-delay: 2s;    
+}
+.burbujas img:nth-child(2){
+    animation-delay: 1s;    
+}
+
+.burbujas img:nth-child(3){
+    animation-delay: 1.5s;    
+}
+
+.burbujas img:nth-child(4){
+    animation-delay: 4s;    
+}
+.burbujas img:nth-child(5){
+    animation-delay: 3s;    
+}
+.burbujas img:nth-child(6){
+    animation-delay: 2s;    
+}
+.burbujas img:nth-child(7){
+    animation-delay: 3.5s;    
+}
+
+
+
+@media(max-width:950px){
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top:0;
+        background-color:white;
+        width: 100%;
+        height: 80%;
+        color:bisque;
+        overflow-y: auto;
+        pointer-events: none;
+        transition: opacity 0.3s;
+        opacity: 0;
+        pointer-events: none;
+
+    }
+
+
+    .menu li{
+        padding: 0;
+    }
+
+
+    .menu li a{
+        color:bisque;
+        line-height:60px;
+        font-size: 25px;
+    }
+    .menu li a::after{
+        content:none;
+    }
+    .menu li a:hover,
+    .menu li a.selected{
+        color:#00545d;
+    }
+    
+
+    .open-menu,
+    .close-menu{
+        display: block;
+        border:none;
+        background: none;
+        cursor:pointer
+    }
+    .close-menu{
+        align-self: flex-end;
+        padding: 25px 11px ;
+        /* position:absolute; */
+
+    }
+
+    .menu_opened{
+        opacity: 1;
+        pointer-events: all;
+    }
+    .contenido .info{
+        
+        left:0;
+        width: 100%;
+        /* background-color: blue;  */
+        
+        transform: translateY(-50%);
+        /* animation: aparecer 2s forwards;    */
+    }
+    }
+    .yo{
+        font-size: 40px;
+        color:#fff;
+        -webkit-text-stroke: 2px #000;
+        padding-left: 2px;
+        text-shadow: 3px 3px #000;
+        letter-spacing: 5px;
+        max-width:600px;
+        margin:0 auto;
+    }

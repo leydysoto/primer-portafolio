@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+section[id]{
+    scroll-margin-top: 70px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --colorcito:#00545d;
+    --letrita: 'Courgette';
+}
+
+.horizontal-padding{
+    padding-left: 25px;
+    padding-right: 25px;
+
+} 
+.vetical-padding{
+    padding-top:25px;
+    padding-bottom:25px;
+
+}
+@media(min-width:950px){
+    .horizontal-padding{
+        padding-left: 70px;
+        padding-right: 70px;
+    
+    } 
+    .vetical-padding{
+        padding-top:70px;
+        padding-bottom:70px;
+    
+    }
+
+}

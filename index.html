@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css"> 
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/habilidades.css">
+    <link rel="stylesheet" href="css/portafolio.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+    <script  defer src="js/app.js"></script>
+</head>
+<body>
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="#inicio" class="logo">
+                <img 
+                height="50"
+                width="50"
+                src="img/code.jpg" 
+                alt="logo">
+                <div class="ley">&lt;LS/&gt;</div>
+            </a>
+            
+            <button class="open-menu " aria-label="Abrir">
+                <img class="uno" src="img/timbre.svg" alt="abrir menu">
+            </button>
+            <ul class="menu ">
+                <button class="close-menu" aria-label="cerrar-menu">
+                    <img src="img/close-icon.svg" alt=" cerrar menu">
+                </button>
+                <li><a href="#perfil" class="selected">perfil</a></li>
+                <li><a href="#habilidades">habilidades</a></li>
+                <li><a href="#proyectos">proyectos</a></li>
+                <li><a href="#contacto">contacto</a></li>
+                
+            </ul>
+            
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <div class="contenedor-img">
+            <div class="imagen"></div>
+        </div>
+
+        <div class="contenido">
+            <div class="info">
+                <h3 class="yo">LEYDY SOTO</h3>
+                <span class="carrera">Fronted Developer</span>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>               
+                </div>
+            </div>         
+        </div> 
+
+        <div class="burbujas">
+            <img src="img/transparente.png" alt="burbujas">
+            <img src="img/transparente.png" alt="burbujas">
+            <img src="img/transparente.png" alt="burbujas">
+            <img src="img/transparente.png" alt="burbujas">
+            <img src="img/transparente.png" alt="burbujas">
+            <img src="img/transparente.png" alt="burbujas">
+            <img src="img/transparente.png" alt="burbujas">
+            <img src="img/transparente.png" alt="burbujas">        
+        </div>  
+              
+    </section>
+    <div class="horizontal-padding vetical-padding">
+        <section id="perfil" class="perfil">
+            <div class="perfil-info">
+                <h2 class="perfil-tiulo">hola, soy <br>leydy</h2>
+                <p class="perfil-detalles">Actualmente, soy estudiante de desarrollo de Sistemas; deseosa de convertirme en una front-end Developer he emprendido el camino del aprendizaje  autodidacta y abarcar tecnologías de especialización.</p>
+                <button class="perfil-btn">Descargar CV</button>
+            </div>
+            <div class="perfil-img-section">
+                <img  class="perfil-img" src="img/perfil.png" alt="programadora">
+                
+            </div>
+        </section>
+    </div>
+    <div class="horizontal-padding vetical-padding">
+        <section id="habilidades" class="skills">
+            <h2 class="skills-title">habilidades</h2>
+            <ul class="skills-list">
+                <li class="skills-skill">CSS</li>
+                <li class="skills-skill">HTML</li>
+                <li class="skills-skill">JavaScript</li>
+                <li class="skills-skill">React.js</li>
+                <li class="skills-skill">git</li>
+            </ul>
+
+        </section>
+    </div>
+    <div class="horizontal-padding vetical-padding">
+        <section id="proyectos" class="portfolio">
+            <h2 class="titulo-seccion"> proyectos</h2>
+            <div class="fila">
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="img/portafolio.png" alt="proyecto">
+                    <div class="info">
+                        <h4>descripci</h4>
+                        <p>deiseño web</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <div class="horizontal-padding vetical-padding">
+        <section class="contacto" id="contacto">
+            <h2 class="contacto-titulo">CONTACTO</h2>
+            <div class="contacto-detalles">
+                <div class="contacto-detalles-grupo">
+                    <p class="titulo-direccion">dirección:</p>
+                    <p class="texto-direccion">peru, lima</p>
+                </div>
+                <div class="contacto-detalles-grupo">
+                    <p class="titulo-email">email:</p>
+                    <p class="texto-email">leydysot.20.ja@gmail.com</p>
+                </div>
+                <div class="contacto-detalles-grupo">
+                    <p clas="mensaje">Deje su mensaje  y con gusto le responderé</p>
+                    
+                </div>
+            </div>
+            <form class="contacto-formulario">
+                <div class="contacto-formulario-grupo">
+                    <label for="name">nombre:</label>
+                    <input required type="text" name="name"id="name" autocomplete="off">
+                </div>
+                <div class="contacto-formulario-grupo">
+                    <label for="email">email:</label>
+                    <input required type="email" name="email" id="email" autocomplete="off">
+                </div>
+                <div class="contacto-formulario-grupo"> 
+                    <label for="message">mensaje:</label>
+                    <textarea required name="message" id="message"  rows="6"></textarea>
+                </div >
+                
+                <button type="submit" class="contacto-formulario-submit">enviar</button>
+
+            </form>
+            <nav class="redes">
+                <ul class="redes-lista">
+                    <li class="redes-item">
+                        <a href="https://github.com/leydysoto">
+                            <img src="/img/github.svg" alt="github">
+                        </a>
+                    </li >
+                    <li class="redes-item">
+                        <a href="https://www.linkedin.com/in/leydysoto/" >
+                            <img src="/img/linkedin.svg" alt="linkedin">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+
+        </section>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/leydysoto/" class="l" ><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/leydysoto" class="g"><i class="fab fa-github"></i></a></li>
+            <li><a href="mailto:leydysot.20.ja@gmail.com" class="e"><i class="fa-solid fa-envelope"></i></a></li>
+            
+        </ul>
+        
+
+    </footer>
+    
+    
+</body>
+<div>
+    
+</div>
+</html>
