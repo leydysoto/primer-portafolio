@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="css/portafolio.css">
     <link rel="stylesheet" href="css/footer.css">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
@@ -54,7 +59,7 @@
         <div class="contenido">
             <div class="info">
                 <h3 class="yo">LEYDY SOTO</h3>
-                <span class="carrera">Fronted Developer</span>
+                <span class="carrera">Frontend Developer</span>
                 <div class="redes">
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -81,7 +86,7 @@
             <div class="perfil-info">
                 <h2 class="perfil-tiulo">hola, soy <br>leydy</h2>
                 <p class="perfil-detalles">Actualmente, soy estudiante de desarrollo de Sistemas; deseosa de convertirme en una front-end Developer he emprendido el camino del aprendizaje  autodidacta y abarcar tecnologías de especialización.</p>
-                <button class="perfil-btn">Descargar CV</button>
+                <a class="perfil-btn" href="/leydySoto.pdf" download="">Descargar CV</a>
             </div>
             <div class="perfil-img-section">
                 <img  class="perfil-img" src="img/perfil.png" alt="programadora">
@@ -135,7 +140,7 @@
                     
                 </div>
             </div>
-            <form class="contacto-formulario">
+            <form class="contacto-formulario" name="contacto" netlify>
                 <div class="contacto-formulario-grupo">
                     <label for="name">nombre:</label>
                     <input required type="text" name="name"id="name" autocomplete="off">
